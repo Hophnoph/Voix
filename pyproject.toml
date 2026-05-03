@@ -1,0 +1,13 @@
+[project]
+name = "Voix"
+version = "0"
+description = "Void Linux made Declarative"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lupa>=2.8",
+    "nuitka>=4.0.8",
+    "rich>=15.0.0",
+    # argparse for cli
+    # subprocess.run for commands
+]
