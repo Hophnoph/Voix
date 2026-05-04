@@ -58,29 +58,29 @@ local voix = {}
 function voix:init()
 	local obj = self
 
-	obj.runit.sv = voixtools.ls("/etc/sv")
+	--obj.runit.sv = voixtools.ls("/etc/sv")
 	obj.system.hostname = voixtools.hostname()
 	obj.system.timezone = voixtools.readlink("/etc/localtime")
 
 	return obj
 end
 
-voix.xbps = {}
-voix.xbps.pkgs = {} -- string array type
+--voix.xbps = {}
+--voix.xbps.pkgs = {} -- string array type
 
 voix.system = {}
 voix.system.hostname = ""
 voix.system.timezone = ""
-voix.system.keyboard = { xorg = "", tty = "" }
-voix.system.locale = ""
+--voix.system.keyboard = { xorg = "", tty = "" }
+--voix.system.locale = ""
 
-voix.runit = {}
-voix.runit.enabled_services = {} -- string array type
-voix.runit.sv = {} -- string enum
+--voix.runit = {}
+--voix.runit.enabled_services = {} -- string array type
+--voix.runit.sv = {} -- string enum
 
 -- i will plan how adding users will work exactly
-voix.user = {}
-voix.root = { enabled = false }
+--voix.user = {}
+--voix.root = { enabled = false }
 --[[
 voix.user.alex = {
   groups = {"wheel", "users"}, or groups = voix.user.default_groups or admin_groups
@@ -92,6 +92,6 @@ voix.user.alex = {
 --]]
 
 -- i will plan how installer options will work
-voix.installer = {}
+--voix.installer = {}
 
 return voix
