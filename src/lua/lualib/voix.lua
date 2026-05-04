@@ -1,8 +1,11 @@
 -- basic voix lua config library, they will be much more options later
--- currently i will focus on implmenting the runit modual
+local voixtools = require("voixtools")
 local voix = {}
 
-function voix:load() end
+function voix:load()
+	self.runit.sv = voixtools.ls("/etc/sv/")
+	self.system.hostname = voixtools.hostname()
+end
 
 voix.xbps = {}
 voix.xbps.pkgs = {} -- string array type
