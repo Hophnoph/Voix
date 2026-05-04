@@ -30,6 +30,10 @@ function voix:load()
 	self.system.hostname = voixtools.hostname()
 end
 
+function voix:init()
+	return self
+end
+
 voix.xbps = {}
 voix.xbps.pkgs = {} -- string array type
 
