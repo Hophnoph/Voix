@@ -8,6 +8,4 @@ dependencies = [
     "lupa>=2.8",
     "nuitka>=4.0.8",
     "rich>=15.0.0",
-    #argparse for cli
-    #subprocess.run for commands
 ]
