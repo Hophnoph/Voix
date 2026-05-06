@@ -4,8 +4,12 @@ from subprocess import run
 
 
 VOIX_CONFIG_PATH = Path("/etc/voix/conf.lua")
+VOIX_HOSTNAME_FILE = Path("/etc/hostname")
 
-env = {"VOIX_CONFIG_PATH": VOIX_CONFIG_PATH}
+env = {
+    "VOIX_CONFIG_PATH": VOIX_CONFIG_PATH,
+    "VOIX_HOSTNAME_FILE": VOIX_HOSTNAME_FILE,
+}
 
 
 def update_env():
